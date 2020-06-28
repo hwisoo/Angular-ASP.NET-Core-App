@@ -22,7 +22,7 @@ namespace Summaries.Data
     }
     public Book GetBookById(int id)
     {
-      return Data.Books.FirstOrDefault(n => n.Id == id)
+      return Data.Books.FirstOrDefault(n => n.Id == id);
     }
     public void UpdateBook(int id, Book newBook)
     {
