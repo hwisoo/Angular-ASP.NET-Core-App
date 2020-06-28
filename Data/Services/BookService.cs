@@ -2,11 +2,11 @@ using System.Collections.Generic;
 
 namespace Summaries.Data
 {
-  public class BookService : IBookService
+  public class BookService: IBookService
   {
     public void AddBook(Book newBook)
     {
-      throw new System.NotImplementedException();
+      Data.Books.Add(newBook);
     }
 
     public void DeleteBook(int id)
@@ -26,9 +26,5 @@ namespace Summaries.Data
     {
       throw new System.NotImplementedException();
     }
-
-
-
-
   }
 }
