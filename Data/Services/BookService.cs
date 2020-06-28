@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Summaries.Data
 {
-  public class BookService: IBookService
+  public class BookService : IBookService
   {
     public void AddBook(Book newBook)
     {
@@ -16,7 +17,7 @@ namespace Summaries.Data
 
     public List<Book> GetAllBooks()
     {
-      throw new System.NotImplementedException();
+      return Data.Books.ToList();
     }
     public Book GetBookById(int id)
     {
